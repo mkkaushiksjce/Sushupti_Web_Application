@@ -6,7 +6,6 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
-    polyfill: 'babel-polyfill',
     bundle: "./index.jsx"
   },
   output: {
@@ -65,12 +64,7 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
-    }),
-    new CopyWebpackPlugin([{
-      from: './app/util/polyfill.js',
-      to: 'polyfill.js',
-      toType: 'file'
-    }])
+    })
   ],
   resolve: {
     extensions: ['', '.js', '.jsx'],
