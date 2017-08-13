@@ -10,6 +10,7 @@ const auth = require('http-auth');
 const path = require('path');
 const compression = require('compression');
 const config = require('./config/server_config.js');
+const port = process.env.PORT || 8080;
 
 //to throw uncaught exception error
 process.on('uncaughtException',  (exception) => {
@@ -44,6 +45,6 @@ app.get('*', function(req, res) {
 });
 
 
-app.listen(config.PORT, () => {
-  console.log('App running on' + config.PORT);
+app.listen(port, () => {
+  console.log('App running on' + port);
 });
