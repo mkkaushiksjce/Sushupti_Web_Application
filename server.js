@@ -9,7 +9,7 @@ const compress = require('compression');
 const auth = require('http-auth');
 const path = require('path');
 const compression = require('compression');
-const config = require('./config/server_config.js');
+// const config = require('./config/server_config.js');
 const port = process.env.PORT || 8080;
 
 //to throw uncaught exception error
