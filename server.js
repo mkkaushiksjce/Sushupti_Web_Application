@@ -38,12 +38,12 @@ app.use(function(req, res, next) {
 });
 
 // app.use(express.static(__dirname));
-// app.use("/dist/", express.static(__dirname + "/dist/", {
-//   maxAge: 100
-// }));
-app.get('/dist/bundle.js', function(req, res) {
-  res.sendFile(__dirname + '/dist/bundle.js');
-});
+app.use("/dist/", express.static(__dirname + "/dist/", {
+  maxAge: 100
+}));
+// app.get('/dist/bundle.js', function(req, res) {
+//   res.sendFile(__dirname + '/dist/bundle.js');
+// });
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
