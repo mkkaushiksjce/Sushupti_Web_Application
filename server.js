@@ -37,7 +37,10 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(express.static(__dirname));
+// app.use(express.static(__dirname));
+app.use("/dist/", express.static(__dirname + "/dist/", {
+  maxAge: 100
+}));
 
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/index.html');
