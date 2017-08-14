@@ -37,7 +37,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(express.static(path.join('./')));
+app.use(express.static(__dirname));
 
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/index.html');
