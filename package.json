@@ -8,11 +8,11 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server --host 0.0.0.0 --progress --inline --hot",
+    "start": "set NODE_ENV=production & webpack --progress --inline --config webpack.production.config.js",
     "build": "set NODE_ENV=production & webpack --progress --inline --config webpack.production.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --host 0.0.0.0 --progress --inline --hot"
   },
-
   "devDependencies": {
     "autoprefixer": "6.5.2",
     "babel-core": "6.18.2",

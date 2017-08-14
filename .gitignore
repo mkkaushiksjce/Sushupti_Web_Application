@@ -60,3 +60,5 @@ typings/
 # config files
 config/
 
+dist
+
