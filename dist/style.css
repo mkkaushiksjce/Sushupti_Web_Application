@@ -1,4 +1,37 @@
-/*! 1502778750730 */
+/*! 1502806965386 */
+@font-face {
+  font-family: 'sans-bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/OpenSans-Bold.ttf);
+  src: url(assets/fonts/OpenSans-Bold.eot?#iefix) format('embedded-opentype');
+  src: url(assets/fonts/OpenSans-Bold.otf);
+  src: url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhc3NldHMvZm9udHMvT3BlblNhbnMtQm9sZC5zdmciOw==) format('svg');
+  src: url(assets/fonts/OpenSans-Bold.woff) format('woff');
+  src: url(assets/fonts/OpenSans-Bold.woff2);
+}
+@font-face {
+  font-family: 'sans-regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/OpenSans-Regular.ttf);
+  src: url(assets/fonts/OpenSans-Regular.eot?#iefix) format('embedded-opentype');
+  src: url(assets/fonts/OpenSans-Regular.otf);
+  src: url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhc3NldHMvZm9udHMvT3BlblNhbnMtUmVndWxhci5zdmciOw==) format('svg');
+  src: url(assets/fonts/OpenSans-Regular.woff) format('woff');
+  src: url(assets/fonts/OpenSans-Regular.woff2);
+}
+@font-face {
+  font-family: 'sans-semibold';
+  font-style: normal;
+  font-weight: normal;
+  src: url(assets/fonts/OpenSans-Semibold.ttf);
+  src: url(assets/fonts/OpenSans-Semibold.eot?#iefix) format('embedded-opentype');
+  src: url(assets/fonts/OpenSans-Semibold.otf);
+  src: url(data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJhc3NldHMvZm9udHMvT3BlblNhbnMtU2VtaWJvbGQuc3ZnIjs=) format('svg');
+  src: url(assets/fonts/OpenSans-Semibold.woff) format('woff');
+  src: url(assets/fonts/OpenSans-Semibold.woff2);
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -213,6 +246,7 @@ section {
 body {
   line-height: 1;
   min-height: 100vh;
+  font-family: sans-regular;
 }
 ol,
 ul {

@@ -1,4 +1,4 @@
-/*! 1502778750730 */
+/*! 1502806965386 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -20250,11 +20250,11 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _reducers = __webpack_require__(273);
+	var _reducers = __webpack_require__(291);
 
 	var _reducers2 = _interopRequireDefault(_reducers);
 
-	var _home_page = __webpack_require__(274);
+	var _home_page = __webpack_require__(292);
 
 	var _home_page2 = _interopRequireDefault(_home_page);
 
@@ -28012,7 +28012,25 @@
 /* 270 */,
 /* 271 */,
 /* 272 */,
-/* 273 */
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28024,7 +28042,7 @@
 		module.exports = rootReducers;
 
 /***/ },
-/* 274 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28039,7 +28057,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	__webpack_require__(275);
+	__webpack_require__(293);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28087,7 +28105,7 @@
 		exports.default = HomePage;
 
 /***/ },
-/* 275 */
+/* 293 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
