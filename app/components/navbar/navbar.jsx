@@ -15,7 +15,7 @@ class Navbar extends React.Component{
                         <div className="logo-wrap f-l"></div>
                         <div className="nav-components-wrap f-r">
                             <div id="home" className="nav-component">HOME</div>
-                            <div id="service" className="nav-component">SERVICES</div>
+                            <div id="service" className="nav-component">OUR WORK</div>
                             <div id="contact" className="nav-component">CONTACT</div>
                         </div>
                     </div>
