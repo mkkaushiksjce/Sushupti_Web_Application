@@ -4,3 +4,15 @@
     font-family: @family;
     color: @color;
 }   
+
+.bg-image-cover(@background-position: center){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: @background-position;
+}
+
+.bg-image-contain(@background-position: center){
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: @background-position;
+}

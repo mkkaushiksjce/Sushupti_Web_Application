@@ -1,0 +1,56 @@
+@import (reference) "../../../styles/common.less";
+
+@logo-height: 46px;
+@logo-margin: 7px;
+@navbar-height: 80px;
+@logo-width-mobile: 110px;
+@logo-width-desktop: 200px;
+
+.navbar-wrap {
+    height: @navbar-height; 
+    padding: @spacing10 0;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+
+    .logo-wrap {
+        background: url("../../../assets/images/logo/logo.jpg");
+        .bg-image-contain(left);
+        height: @logo-height;
+        width: @logo-width-desktop;
+        margin: @logo-margin 0;
+        cursor: pointer;
+    }
+}
+.nav-components-wrap{
+    line-height: @spacing60;
+    .nav-component{
+        .font-generic(@fs14, 'sans-bold', @white);
+        display: inline-block;
+        cursor: pointer;
+        &:not(:last-child){
+            margin-right: @spacing20;
+        }
+        &:hover{
+            color: @get-in-touch-color;
+        }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .navbar-wrap {
+        padding: 0 @spacing10;
+        .logo-wrap {
+            width: @logo-width-mobile;
+        }
+    }
+    .nav-components-wrap {
+        .nav-component {
+            font-size: @fs12;
+        }
+        .nav-component:not(:last-child) {
+            margin-right: @spacing10;
+        }
+    }
+}
