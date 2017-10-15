@@ -1,5 +1,7 @@
 import React from 'react';
 import './home_page.less';
+import $ from 'jquery';
+import Navbar from '../components/navbar/navbar';
 
 class HomePage extends React.Component{
 
@@ -13,6 +15,7 @@ class HomePage extends React.Component{
 
     return(
           <div className="homepage">
+            <Navbar />
             <div className="home-section-wrap">
               <div className="overlay"></div>
               <div className="title-wrap">

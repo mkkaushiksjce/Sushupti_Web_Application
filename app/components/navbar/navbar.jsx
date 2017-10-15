@@ -1,5 +1,5 @@
 import React from 'react';
-import './home_page.less';
+import './navbar.less';
 
 class Navbar extends React.Component{
     constructor(props){
@@ -9,7 +9,7 @@ class Navbar extends React.Component{
     render(){
         const {props, state} = this;
 
-        return{
+        return(
                 <div className="navbar-wrap cf">
                     <div id="customViewport" className="viewport-wrap">
                         <div className="logo-wrap f-l"></div>
@@ -20,7 +20,7 @@ class Navbar extends React.Component{
                         </div>
                     </div>
                 </div>
-        }
+        )
     }
 }
 
