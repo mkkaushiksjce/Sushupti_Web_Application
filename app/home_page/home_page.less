@@ -1,8 +1,7 @@
 @import (reference) "../../styles/common.less";
-@import (reference) "../../styles/fonts.less";
-@import (reference) "../../styles/lesshat.less";
-@import (reference) "../../styles/mixins.less";
-@import (reference) "../../styles/variables.less";
+
+@bg-image-opacity: 0.7;
+@subtitle-border-opacity: 0.8;
 
 .homepage {
     .home-section-wrap {
@@ -11,7 +10,7 @@
         opacity: 0.8;
         width: 100%;
         position: relative;
-        background: url("../common/images/bg/code.jpeg");
+        background: url("../../assets/images/landing/board.jpeg");
         background-repeat: repeat-x;
         background-attachment: fixed;
         background-position: center;
@@ -20,7 +19,7 @@
     .overlay {
         min-height: 100vh;
         height: 100%;
-        background-color: rgba(21, 21, 21, .8); // background-color : @theme-color;
+        background-color: rgba(21, 21, 21, @bg-image-opacity); // background-color : @theme-color;
         // opacity: 0.8;
         position: absolute;
         top: 0;
@@ -56,14 +55,14 @@
             'sans-regular',
             @white);
             padding: @spacing5 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, @subtitle-border-opacity);
+            border-bottom: 1px solid rgba(255, 255, 255, @subtitle-border-opacity);
             display: inline-block;
         }
     }
     #contactBtn {
         width: 200px;
-        background: @purchase-button-red;
+        background: @get-in-touch-color;
         margin-top: @spacing50;
         display: block;
         position: relative;
@@ -78,9 +77,6 @@
             .title {
                 font-size: @fs34;
             }
-            .subtitle {
-                font-size: @fs11;
-            }
         }
     }
 }
@@ -94,10 +90,7 @@
             padding: 0 @spacing20;
             top: 50%;
             .title {
-                font-size: @fs20;
-            }
-            .subtitle {
-                font-size: @fs12;
+                font-size: @fs22;
             }
         }
         #customViewport {

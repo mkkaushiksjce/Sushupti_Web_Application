@@ -16,9 +16,9 @@ class HomePage extends React.Component{
             <div className="home-section-wrap">
               <div className="overlay"></div>
               <div className="title-wrap">
-                <h1 className="title">MATERIAL DESIGN AGENCY WP THEME</h1>
-                <div className="subtitle">SUPER CLEAN MINIMAL DESIGN. AWESOME FEATURES WITH ENDLESS POSSIBILITIES.</div>
-                <div id="contactBtn" className="button">GET IN TOUCH</div>
+                <h1 className="title">SUSPTHI DREAM STUDIOS</h1>
+                <div className="subtitle">Filmmaking is the ultimate team sport.</div>
+                <div id="contactBtn" className="button ripple">GET IN TOUCH</div>
               </div>
             </div>
           </div>
