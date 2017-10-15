@@ -1,0 +1,107 @@
+@import (reference) "../../styles/common.less";
+@import (reference) "../../styles/fonts.less";
+@import (reference) "../../styles/lesshat.less";
+@import (reference) "../../styles/mixins.less";
+@import (reference) "../../styles/variables.less";
+
+.homepage {
+    .home-section-wrap {
+        min-height: 100vh;
+        height: 100%; // background-color: @theme-color;
+        opacity: 0.8;
+        width: 100%;
+        position: relative;
+        background: url("../common/images/bg/code.jpeg");
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .overlay {
+        min-height: 100vh;
+        height: 100%;
+        background-color: rgba(21, 21, 21, .8); // background-color : @theme-color;
+        // opacity: 0.8;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .viewport-wrap {
+        max-width: @viewport-width;
+        margin: 0 auto;
+    }
+    #customViewport {
+        max-width: none;
+        padding: 0 @spacing50;
+    }
+    .title-wrap {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        .translate(-50%,
+        -50%);
+        width: 100%;
+        text-align: center;
+        z-index: 0;
+        .title {
+            .font-generic(@fs40,
+            'sans-bold',
+            @white);
+            margin: @spacing20 0;
+        }
+        .subtitle {
+            .font-generic(@fs14,
+            'sans-regular',
+            @white);
+            padding: @spacing5 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-block;
+        }
+    }
+    #contactBtn {
+        width: 200px;
+        background: @purchase-button-red;
+        margin-top: @spacing50;
+        display: block;
+        position: relative;
+        left: 50%;
+        .translateX(-50%);
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+    .homepage {
+        .title-wrap {
+            .title {
+                font-size: @fs34;
+            }
+            .subtitle {
+                font-size: @fs11;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .homepage {
+        .home-section-wrap {
+            padding: 0 @spacing20;
+        }
+        .title-wrap {
+            padding: 0 @spacing20;
+            top: 50%;
+            .title {
+                font-size: @fs20;
+            }
+            .subtitle {
+                font-size: @fs12;
+            }
+        }
+        #customViewport {
+            padding: 0;
+        }
+    }
+}
