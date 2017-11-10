@@ -1,4 +1,4 @@
-/*! 1510328802031 */
+/*! 1510333116583 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -38364,7 +38364,6 @@
 	        var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
 
 	        _this.contactForm = function () {
-	            debugger;
 	            var link = 'https://docs.google.com/forms/d/e/1FAIpQLSfFLbhm3zotwdAwfo2VUJpcUVzChiZFWnux6SUHg1gqPGbs2g/viewform';
 	            window.location.href = link;
 	        };
@@ -38439,6 +38438,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	__webpack_require__(303);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -38461,8 +38462,30 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
-	                'Hello Film school'
+	                { id: 'filmSchoolWrap' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { id: 'filmschoolImage' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { id: 'filmschoolContentWrap' },
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'content-header' },
+	                            'LIGHT CAMERA ACTION'
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'content-subheader' },
+	                            'LEARN FILM MAKING TECHNIQUES FROM THE BEST'
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    _react2.default.createElement('iframe', { width: '560', height: '315', src: 'https://www.youtube.com/embed/15YamRufKJk?rel=0', frameborder: '0', allowfullscreen: true })
+	                )
 	            );
 	        }
 	    }]);
@@ -38473,6 +38496,12 @@
 	;
 
 	exports.default = FilmSchool;
+
+/***/ },
+/* 303 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 /******/ ]);

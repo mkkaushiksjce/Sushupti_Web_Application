@@ -1,4 +1,4 @@
-/*! 1510328802031 */
+/*! 1510333116583 */
 @font-face {
   font-family: 'sans-bold';
   font-style: normal;
@@ -446,6 +446,39 @@ table {
   .nav-components-wrap .nav-component:not(:last-child) {
     margin-right: 10px;
   }
+}
+#filmSchoolWrap #filmschoolImage {
+  background: url(61aea21f1a77f94555e5a7e2e12cd470.jpeg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
+  position: relative;
+}
+#filmSchoolWrap #filmschoolContentWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+#filmSchoolWrap .content-header {
+  font-size: 48px;
+  font-family: 'sans-bold';
+  color: #FFF;
+}
+#filmSchoolWrap .content-subheader {
+  margin-top: 25px;
+  font-size: 36px;
+  font-family: 'sans-regular';
+  color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map*/

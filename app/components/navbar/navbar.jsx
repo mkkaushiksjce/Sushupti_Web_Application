@@ -8,7 +8,6 @@ class Navbar extends React.Component{
     }
 
     contactForm = ()=>{
-        debugger;
         const link = 'https://docs.google.com/forms/d/e/1FAIpQLSfFLbhm3zotwdAwfo2VUJpcUVzChiZFWnux6SUHg1gqPGbs2g/viewform';
         window.location.href = link;
     }
