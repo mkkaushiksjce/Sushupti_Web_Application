@@ -11,6 +11,7 @@ import Main from './App';
 import reducers from './reducers';
 
 import HomePage from './home_page/home_page';
+import FilmSchool from './film_school/film_school';
 
 // Add the reducer to your store on the `routing` key
 const store = createStore(
@@ -41,6 +42,7 @@ export default class App extends React.Component {
       <Provider store = {store}>
         <Router history = {history} component = {Main}>
           <Route path = "/" component = {HomePage} />
+          <Route path = "/film-school" component = {FilmSchool} />
         </Router>
       </Provider>
     );
