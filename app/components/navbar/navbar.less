@@ -23,17 +23,41 @@
     }
 }
 .nav-components-wrap{
-    line-height: @spacing60;
-    .nav-component{
-        .font-generic(@fs14, 'sans-bold', @white);
-        display: inline-block;
-        cursor: pointer;
-        &:not(:last-child){
-            margin-right: @spacing20;
+    line-height: @spacing25;
+        .nav-component{
+            .font-generic(@fs14, 'sans-bold', @white);
+            display: inline-block;
+            cursor: pointer;
+            &:not(:last-child){
+                margin-right: @spacing25;
+            }
+            &:hover{
+                color: @get-in-touch-color;
+            }
         }
-        &:hover{
-            color: @get-in-touch-color;
-        }
+    .transition{
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+    }
+    .transition + transition{
+        margin-left: 1rem;
+    }
+    .transition::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+        transform-origin: bottom right;
+        background-color: #f34d4d;
+    }
+    .transition:hover::after{
+        transform-origin: bottom left;
+        transform: scaleX(1);
     }
 }
 
