@@ -1,4 +1,4 @@
-/*! 1510333116583 */
+/*! 1601615716252 */
 @font-face {
   font-family: 'sans-bold';
   font-style: normal;
@@ -418,7 +418,7 @@ table {
   cursor: pointer;
 }
 .nav-components-wrap {
-  line-height: 60px;
+  line-height: 25px;
 }
 .nav-components-wrap .nav-component {
   font-size: 14px;
@@ -428,10 +428,34 @@ table {
   cursor: pointer;
 }
 .nav-components-wrap .nav-component:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .nav-components-wrap .nav-component:hover {
   color: #FF5252;
+}
+.nav-components-wrap .transition {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-components-wrap .transition + transition {
+  margin-left: 1rem;
+}
+.nav-components-wrap .transition::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: bottom right;
+  background-color: #f34d4d;
+}
+.nav-components-wrap .transition:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 @media (max-width: 767px) {
   .navbar-wrap {
